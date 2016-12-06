@@ -95,6 +95,8 @@ div .container-productos .container-vitrina {
 }
 
 .container-vitrina {
+  width: 100%;
+  margin: auto;
   height: 150px;
   background: url("../imagenes/estante%20productos3.png") no-repeat bottom;
   background-size: 100% 100%;
