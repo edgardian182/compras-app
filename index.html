@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TemplateBeginEditable name="doctitle" -->
+  <title>Compras Todo</title>
+  <!-- TemplateEndEditable -->
+  <link rel="Shortcut Icon" href="imagenes/icono_buy_all.png" type="image/x-icon" />
+  <!-- <link href="file:///C|/xampp/htdocs/PAGINAS WEB/buy_all/css/bootstrap.css" rel="stylesheet"> -->
+  <link href="css/bootstrap-3.3.4.css" rel="stylesheet" type="text/css">
+  <link href="css/plantilla_general_css.css" rel="stylesheet" type="text/css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  <!-- TemplateBeginEditable name="head" -->
+  <!-- TemplateEndEditable -->
+  </head>
+  <body>
+  <!-- TemplateBeginEditable name="body_inicio_vista" -->
+ <!--inicia contenido total-->
+  <div class="container-fluid-fondo">
+  <!--contenido de la app-->
+    <div class="container-fondo">
+
+      <!--Aquí inicia el encabezado-->
+      <div class="container-fluid-encabezado">
+        <div class="container-logo-Btn_opciones">
+
+          <div class="container-navegacion">
+            <div class="row">
+
+              <div class="col-xs-9">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-grande" style="background: #FF5A3D; color: white; font-size: 25px">INICIO</button>
+                  </span>
+                  <input type="text" class="form-control input-grande" placeholder="Buscar...">
+                </div>
+              </div>
+
+              <div class="col-xs-3">
+                <div class="">
+                <img src="imagenes/botones/Btn_opciones_buy_all2.png" width="100%" class="img-responsive" alt="Placeholder image">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--fin del encabezado-->
+
+      <!--Inicio de cuerpo-->
+      <div class="container-fluid-cuerpo">
+
+        <!--Inicio de busqueda-carrito-->
+        <div class="row container-busqueda-carrito">
+
+          <div class="col-xs-3 text-center">
+            <img width="70%" height="50%" src="imagenes/logos/Logo_CompraExpress_01.png" alt="" width="100px" height="100px">
+          </div>
+
+          <div class="col-xs-6">
+            <div class="buscador">
+              <div class="input-group">
+                <input type="text" class="form-control input-lg" placeholder="Buscar productos">
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-lg" style="background: #FF5A3D; color: white"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-3 text-center">
+            <img width="70%" height="50%" src="imagenes/botones/Btn_carro_compras_buy_all3.png" alt="" width="100px" height="100px">
+          </div>
+
+        </div>
+
+         <!--fin de busqueda-carrito-->
+
+          <!-- ************************** PRODUCTOS **************************** -->
+
+          <div class="container-listado-productos">
+            <!-- Div Barra de desplazamiento  -->
+            <div class="desplazamiento">
+              <!--Inicio lista de productos-->
+
+              <div class="row container-vitrina">
+
+                <div class="col-xs-4 container-producto">
+                  <a href="#modalComprar" class="link-producto" data-toggle="modal">
+                    <img class="producto" src="imagenes/productos/logo/zapato1.png" alt="">
+                  </a>
+                </div>
+
+                <div class="col-xs-4 container-descripcion text-center">
+                  <div class="row">
+                    <h3>Adidas World Cup</h3>
+                  </div>
+                  <div class="row">
+                    <h2>$270.000</h2>
+                  </div>
+                </div>
+
+                <div class="col-xs-4 container-btn-logo text-center">
+                  <div class="row contain-half">
+                    <img class="logoEmpresa" src="imagenes/productos/logo/adidas-logo.png" alt="">
+                  </div>
+                  <div class="row contain-half">
+                    <a href="#modalProducto" class="btn btn-success" data-toggle="modal">Detalles</a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ************************* FIN PRODUCTOS ************************** -->
+
+        </div>
+        <!-- fin del cuerpo-->
+
+
+        <!-- MODAL PARA PRODUCTOS -->
+        <div class="modal fade" id="modalProducto" role="dialog">
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+
+
+                <div class="row">
+                  <div class="col-xs-12 panel">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active img-container">
+                          <img class="img-modal" src="imagenes/productos/logo/zapato1.png" alt="zapato">
+                        </div>
+
+                        <div class="item img-container">
+                          <img class="img-modal" src="imagenes/productos/logo/zapato2.png" alt="zapato">
+                        </div>
+
+                        <div class="item img-container">
+                          <img class="img-modal" src="imagenes/productos/logo/zapato3.png" alt="zapato">
+                        </div>
+                      </div>
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="modal-body text-center">
+                <p><span style="font-weight:bold">Nombre:</span> Adidas World Cup </p>
+                <p><span style="font-weight:bold">Precio:</span> $270.000</p>
+                <p><span style="font-weight:bold">Marca:</span> Adidas</p>
+                <p><span style="font-weight:bold">Color:</span> Negro</p>
+                <p><span style="font-weight:bold">Tallas:</span> 36-43</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- FIN MODAL PRODUCTOS -->
+
+
+
+
+        <!-- MODAL PARA COMPRAR -->
+        <div class="modal fade" id="modalComprar" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="col-xs-6 img-container2">
+                  <img src="imagenes/productos/logo/zapato1.png" class="img-responsive img-modal" id="img-producto-modal" data-price="270000">
+                  <!-- **************** TOMAR data-price de DB ***************************-->
+                </div>
+                <div class="col-xs-6 text-center img-container2">
+                  <h1 style="color:#347B9E">Adidas World Cup</h3>
+                  <h2>$270.000 p.u</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="modal-body text-center">
+
+                  <form id="formulario-cantidad-producto" action="">
+                    <div class="form-group row">
+                      <label for="cantidad" class="col-xs-3 col-xs-offset-3 col-form-label"><span style="font-size:2em;">Cantidad:</span></label>
+                      <div class="col-xs-2 comprando">
+                        <input type="number" class="form-control" id="cantidad-p" value="1">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="total" class="col-xs-3 col-xs-offset-3 col-form-label"><span style="font-size:2em">Total:</span></label>
+                      <div class="col-xs-2">
+                        <p id="total-pagar" style="font-size:2em">$270000</p>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-xs-offset-5 col-xs-2">
+                        <button type="submit" class="btn btn-primary"><strong>ESCOGER</strong></button>
+                      </div>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- FIN MODAL PARA COMPRAR -->
+
+
+
+        <!--Inicio de pie-->
+        <div class="container-fluid-pie">
+          <!--Inicio de carrito-mensajes-botones-->
+          <div class=" row container-carrito-mensajes-botones">
+
+            <div class="col-xs-4 text-center">
+              <img class="btn" src="imagenes/botones/Btn_carro_compras_buy_all3.png" alt="" width="100px" height="100px">
+            </div>
+
+            <div class="col-xs-4">
+              <p>BOTON CANASTA</p>
+            </div>
+
+            <div class="col-xs-4">
+              <p>MENSAJES</p>
+            </div>
+
+          </div>
+          <!--fin de carrito-mensajes-botones-->
+
+
+
+          <!--Inicio de derechos-->
+          <div class="container-derechos_reservados">
+
+          </div>
+          <!--fin de derechos-->
+        </div>
+        <!-- fin de pie-->
+
+    </div>
+     <!--fin contenido de la app-->
+  </div>
+  <!-- fin contenido total-->
+
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <!-- <script src="file:///C|/xampp/htdocs/PAGINAS WEB/buy_all/js/bootstrap.js"></script> -->
+  <script src="js/bootstrap-3.3.4.js" type="text/javascript"></script>
+  <!-- TemplateEndEditable -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+  </body>
+</html>
