@@ -114,6 +114,12 @@ div .container-productos .container-vitrina {
       max-width: 100%; /* 100% ancho de su contenedor logoP*/
       max-height: 80%; /* 80% del tamaño de su contenedor => quedar sobre la imagen de la Vitrina */
       position: absolute; /* Relativo a posicion de .logoP */
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-top: auto;
+      margin-bottom: auto;
     }
 
   .container-descripcion {
@@ -134,9 +140,9 @@ div .container-productos .container-vitrina {
       .logoEmpresa {
         position: relative;
         width: 50%;
-        height: 80%;
+        height: 50%;
         margin: auto;
-        top: 4px;
+        top: 15px;
       }
 /* ************************* FIN PRODUCTOS ******************************** */
 
