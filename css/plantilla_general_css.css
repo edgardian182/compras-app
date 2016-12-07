@@ -41,7 +41,7 @@ overflow-y: scroll !important;
 @media only screen and (max-width: 768px) {
   /* ************************** BUSQUEDA *********************** */
   #img-carrito {
-    width: 60%;
+    width: 70%;
     height: 50%;
   }
   .buscador {
