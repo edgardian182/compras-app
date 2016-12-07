@@ -1,33 +1,39 @@
-// // set current position
-// var cPosition = false;
+$('.btn-plus').on('click',function(){
+  var price = +$('#img-producto-modal').data('price');
+  var cantidad = +$('#cantidad-p').val();
+  $('#cantidad-p').val(cantidad + 1);
+  cantidad = +$('#cantidad-p').val();
+  $('#total-pagar').text('$' + price*cantidad)
+});
 
-// $('.modal').on('show.bs.modal', function(){
+$('.btn-minus').on('click',function(){
+  var price = +$('#img-producto-modal').data('price');
+  var cantidad = +$('#cantidad-p').val();
 
-//     cPosition = $(window).scrollTop();
-// })
-// .on('shown.bs.modal', function(){
+  if(cantidad > 1) {
+    $('#cantidad-p').val(cantidad - 1);
+    cantidad = +$('#cantidad-p').val();
+    $('#total-pagar').text('$' + price*cantidad);
+  }
+  else {
+    $('#total-pagar').text('$' + price);
+  }
+});
 
-//     $('body').css({
-//         position:'fixed'
-//     });
-// })
-// .on('hide.bs.modal', function(){
-
-//     $('body').css({
-//         position:'relative'
-//     });
-
-//     window.scrollTo(0, cPosition);
-// });
-
-
-
+// MOSTRAR VALOR PRODUCTO
 $('.comprando').on('change','#cantidad-p',function(){
   var price = +$('#img-producto-modal').data('price');
   var cantidad = +$('#cantidad-p').val();
 
-  $('#total-pagar').text('$' + price*cantidad)
+  if(cantidad > 1) {
+    $('#total-pagar').text('$' + price*cantidad)
+  }
+  else {
+    $('#cantidad-p').val(1);
+    $('#total-pagar').text('$' + price);
+  }
 });
+
 
 $('#formulario-cantidad-producto').on('submit',function(){
 

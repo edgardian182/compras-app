@@ -44,9 +44,8 @@
               </div>
 
               <div class="col-xs-3 col-md-2">
-                <div class="">
-                <img src="imagenes/botones/Btn_opciones_buy_all2.png" width="100%" class="img-responsive" alt="Placeholder image">
-                </div>
+                <!-- Ancho BOTON OPCIONES en media querys +1200px  -->
+                <img id="img-opciones-buy" src="imagenes/botones/Btn_opciones_buy_all2.png" width="100%" class="img-responsive" alt="Placeholder image">
               </div>
 
             </div>
@@ -178,12 +177,35 @@
 
               </div>
               <div class="desplazamiento-modal-produtos">
-                <div class="modal-body text-center">
-                  <p><span style="font-weight:bold">Nombre:</span> Adidas World Cup </p>
-                  <p><span style="font-weight:bold">Precio:</span> $270.000</p>
-                  <p><span style="font-weight:bold">Marca:</span> Adidas</p>
-                  <p><span style="font-weight:bold">Color:</span> Negro</p>
-                  <p><span style="font-weight:bold">Tallas:</span> 36-43</p>
+                <div class="modal-body">
+
+                  <div class="row">
+                    <div class="col-xs-4 col-xs-offset-2">
+                      <h4>Nombre:</h4>
+                      <h4>Precio:</h4>
+                      <h4>Marca:</h4>
+                      <h4>Color:</h4>
+                      <h4>Talla:</h4>
+                      <h4>Nombre:</h4>
+                      <h4>Precio:</h4>
+                      <h4>Marca:</h4>
+                      <h4>Color:</h4>
+                      <h4>Talla:</h4>
+                    </div>
+                    <div class="col-xs-5 text-left">
+                      <h4>Adidas World Cup</h4>
+                      <h4>$270.000</h4>
+                      <h4>Adidas</h4>
+                      <h4>Negro</h4>
+                      <h4>36-43</h4>
+                      <h4>Adidas World Cup</h4>
+                      <h4>$270.000</h4>
+                      <h4>Adidas</h4>
+                      <h4>Negro</h4>
+                      <h4>36-43</h4>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -201,15 +223,21 @@
             <div class="modal-content">
 
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <div class="col-xs-6 img-container2">
-                  <img src="imagenes/productos/logo/zapato1.png" class="img-responsive img-modal" id="img-producto-modal" data-price="270000">
-                  <!-- **************** TOMAR data-price de DB ***************************-->
+                <div class="modal-cierre">
+                  <a id="modal-cierre" type="button" class="close" data-dismiss="modal" style="font-size:3em; color:red">&times;</a>
                 </div>
-                <div class="col-xs-6 text-center img-container2">
-                  <h1 style="color:#347B9E">Adidas World Cup</h3>
-                  <h2>$270.000 p.u</h2>
+
+                <div class="row">
+                  <div class="col-xs-12 img-container2">
+                    <img src="imagenes/productos/logo/zapato1.png" class="img-responsive img-modal" id="img-producto-modal" data-price="270000">
+                    <!-- **************** TOMAR data-price de DB ***************************-->
+                  </div>
+                  <div class="col-xs-12 text-center">
+                    <h1 style="color:#347B9E">Adidas World Cup</h3>
+                    <h2>$270.000 p.u</h2>
+                  </div>
                 </div>
+
               </div>
 
               <div class="row">
@@ -217,19 +245,26 @@
 
                   <form id="formulario-cantidad-producto" action="">
                     <div class="form-group row">
-                      <label for="cantidad" class="col-xs-3 col-xs-offset-3 col-form-label"><span style="font-size:2em;">Cantidad:</span></label>
-                      <div class="col-xs-2 comprando">
-                        <input type="number" class="form-control" id="cantidad-p" value="1">
+                      <label for="cantidad" class="col-xs-3 col-xs-offset-1 col-form-label"><span style="font-size:2em;">Cantidad:</span></label>
+
+                      <div class="col-xs-2 col-xs-offset-1 comprando">
+                        <input type="text" class="form-control" id="cantidad-p" value="1">
                       </div>
+
+                      <div class="col-xs-4">
+                        <a class="btn btn-sm btn-plus" style="background: green; color: white"><span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-sm btn-minus" style="background: red; color: white"><span class="glyphicon glyphicon-minus"></span></a>
+                      </div>
+
                     </div>
                     <div class="form-group row">
-                      <label for="total" class="col-xs-3 col-xs-offset-3 col-form-label"><span style="font-size:2em">Total:</span></label>
-                      <div class="col-xs-2">
+                      <label for="total" class="col-xs-3 col-xs-offset-2 col-form-label"><span style="font-size:2em">Total:</span></label>
+                      <div class="col-xs-2 col-xs-offset-1">
                         <p id="total-pagar" style="font-size:2em">$270000</p>
                       </div>
                     </div>
                     <div class="form-group row">
-                      <div class="col-xs-offset-5 col-xs-2">
+                      <div class="col-xs-offset-5 col-xs-1">
                         <button type="submit" class="btn btn-primary"><strong>ESCOGER</strong></button>
                       </div>
                     </div>
@@ -250,16 +285,16 @@
           <!--Inicio de carrito-mensajes-botones-->
           <div class=" row container-carrito-mensajes-botones">
 
-            <div class="col-xs-4 text-center">
-              <img class="btn" src="imagenes/botones/hacer_pedido_buy_all.png" alt="" width="100px" height="100px">
+            <div class="col-xs-4 col-md-3 col-md-offset-1">
+              <img class="btn btn-pie-compra" src="imagenes/botones/hacer_pedido_buy_all.png" alt="" width="90%" height="100%">
             </div>
 
-            <div class="col-xs-4">
-              <img class="btn" src="imagenes/botones/boton-canasta.png" alt="" width="100px" height="100px">
+            <div class="col-xs-4 col-md-3 col-md-offset-1">
+              <img class="btn btn-pie-compra" src="imagenes/botones/boton-canasta.png" alt="" width="90%" height="100%">
             </div>
 
-            <div class="col-xs-4">
-              <img class="btn" src="imagenes/botones/mensaje_buy_all.png" alt="" width="100px" height="100px">
+            <div class="col-xs-4 col-md-3 col-md-offset-1">
+              <img class="btn btn-pie-compra" src="imagenes/botones/mensaje_buy_all.png" alt="" width="90%" height="100%">
             </div>
 
           </div>

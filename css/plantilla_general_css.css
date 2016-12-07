@@ -30,7 +30,7 @@ overflow-y: scroll !important;
 @media only screen and (min-width: 250px) {
   /* ************************** BUSQUEDA *********************** */
   #img-carrito {
-    width: 70%;
+    width: 80%;
     height: 50%;
   }
   .buscador {
@@ -46,7 +46,7 @@ overflow-y: scroll !important;
 @media only screen and (min-width: 550px) {
   /* ************************** BUSQUEDA *********************** */
   #img-carrito {
-    width: 60%;
+    width: 65%;
     height: 50%;
   }
   .buscador {
@@ -74,13 +74,23 @@ overflow-y: scroll !important;
 @media only screen and (min-width: 992px) {
   /* ************************** BUSQUEDA *********************** */
   #img-carrito {
-    width: 70%;
+    width: 75%;
     height: 50%;
   }
   .buscador {
     padding-top: 3%;
   }
   /* ************************** FIN BUSQUEDA *********************** */
+}
+
+@media only screen and (min-width: 1200px) {
+  #img-opciones-buy {
+    width: 80%;
+  }
+
+  .btn-pie-compra {
+    width: 60%;
+  }
 }
 
 
