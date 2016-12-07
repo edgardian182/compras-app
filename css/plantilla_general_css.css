@@ -28,7 +28,7 @@ overflow-y: scroll !important;
 @media only screen and (max-width: 400px) {
   /* ************************** BUSQUEDA *********************** */
   #img-carrito {
-    width: 70%;
+    width: 100%;
     height: 50%;
   }
   .buscador {
@@ -37,6 +37,7 @@ overflow-y: scroll !important;
   /* ************************** FIN BUSQUEDA *********************** */
 }
 
+/* ++++++++++ TABLETAS Y MENOS ++++++++++*/
 @media only screen and (max-width: 768px) {
   /* ************************** BUSQUEDA *********************** */
   #img-carrito {
@@ -49,7 +50,8 @@ overflow-y: scroll !important;
   /* ************************** FIN BUSQUEDA *********************** */
 }
 
-@media only screen and (min-width: 768px) {
+/* +++++++ COMPUTADORES +++++++++ */
+@media only screen and (min-width: 769px) {
   /* ************************** BUSQUEDA *********************** */
   #img-carrito {
     width: 90%;
