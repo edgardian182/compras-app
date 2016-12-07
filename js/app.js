@@ -1,24 +1,24 @@
-// set current position
-var cPosition = false;
+// // set current position
+// var cPosition = false;
 
-$('.modal').on('show.bs.modal', function(){
+// $('.modal').on('show.bs.modal', function(){
 
-    cPosition = $(window).scrollTop();
-})
-.on('shown.bs.modal', function(){
+//     cPosition = $(window).scrollTop();
+// })
+// .on('shown.bs.modal', function(){
 
-    $('body').css({
-        position:'fixed'
-    });
-})
-.on('hide.bs.modal', function(){
+//     $('body').css({
+//         position:'fixed'
+//     });
+// })
+// .on('hide.bs.modal', function(){
 
-    $('body').css({
-        position:'relative'
-    });
+//     $('body').css({
+//         position:'relative'
+//     });
 
-    window.scrollTo(0, cPosition);
-});
+//     window.scrollTo(0, cPosition);
+// });
 
 
 
