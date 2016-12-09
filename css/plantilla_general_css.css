@@ -27,7 +27,7 @@ overflow-y: scroll !important;
 
 /* +++++++++++++++++++++++++ CELULARES +++++++++++++++++++++++++++++++++++*/
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-@media only screen and (min-width: 250px) {
+@media only screen and (min-width: 250px) and (orientation: portrait) {
   /* ************************** BUSQUEDA *********************** */
   #img-carrito {
     width: 80%;
@@ -43,6 +43,22 @@ overflow-y: scroll !important;
     height: 56vh;
   }
   /* ************************** FIN BUSQUEDA *********************** */
+}
+
+@media only screen and (min-width: 250px) and (orientation: landscape) {
+  #img-carrito {
+    width: 80%;
+    height: 50%;
+  }
+  .buscador {
+    padding-top: 5%;
+  }
+
+  .container-listado-productos {
+    padding: 2%;
+    /*height: 400px;*/
+    height: 70vh;
+  }
 }
 
 
@@ -85,6 +101,13 @@ overflow-y: scroll !important;
   }
   .buscador {
     padding-top: 3%;
+  }
+
+  .container-listado-productos {
+    padding: 2%;
+    /*height: 400px;*/
+    width: 85%;
+    margin: auto;
   }
   /* ************************** FIN BUSQUEDA *********************** */
 }
