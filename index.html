@@ -34,7 +34,41 @@
           <div class="container-navegacion">
             <div class="row">
 
-              <div class="col-xs-9 col-md-10">
+              <!-- ********************* NAVBAR ******************************* -->
+
+              <div class="col-xs-12">
+
+                <nav class="nav navbar-default">
+                  <div class="container-fluid">
+
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">Buy-All</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Compra Express</a></li>
+                        <li><a href="Power/power-motos.html">Cajero Express</a></li>
+                        <li><a href="#">Vuelta ya</a></li>
+                        <li><a href="#">Empresas y Servicios</a></li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </nav>
+
+              </div>
+
+              <!-- ANTES -->
+              <!-- <div class="col-xs-9 col-md-10">
                 <div class="input-group">
                   <span class="input-group-btn">
                     <button type="button" class="btn btn-grande" style="background: #FF5A3D; color: white; font-size: 25px">INICIO</button>
@@ -42,11 +76,10 @@
                   <input type="text" class="form-control input-lg input-grande" placeholder="Buscar...">
                 </div>
               </div>
-
               <div class="col-xs-3 col-md-2">
                 <!-- Ancho BOTON OPCIONES en media querys +1200px  -->
-                <img id="img-opciones-buy" src="imagenes/botones/Btn_opciones_buy_all2.png" width="100%" class="img-responsive" alt="Placeholder image">
-              </div>
+                <!-- <img id="img-opciones-buy" src="imagenes/botones/Btn_opciones_buy_all2.png" width="100%" class="img-responsive" alt="Placeholder image"> -->
+              <!-- </div> -->
 
             </div>
           </div>
@@ -62,14 +95,16 @@
         <div class="row container-busqueda-carrito">
 
           <div class="col-xs-7 col-xs-offset-1 col-md-8 col-md-offset-1">
-            <div class="buscador">
-              <div class="input-group">
-                <input type="text" class="form-control input-lg" placeholder="Buscar...">
-                <span class="input-group-btn">
-                  <button type="button" class="btn btn-lg" style="background: #FF5A3D; color: white"><span class="glyphicon glyphicon-search"></span></button>
-                </span>
+            <form action="#">
+              <div class="buscador">
+                <div class="input-group">
+                  <input type="text" class="form-control input-lg" placeholder="Buscar..." name="busqueda">
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn btn-lg" style="background: #FF5A3D; color: white"><span class="glyphicon glyphicon-search"></span></button>
+                  </span>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
 
           <div class="col-xs-4 col-md-2 text-center">
@@ -243,12 +278,12 @@
               <div class="row">
                 <div class="modal-body text-center">
 
-                  <form id="formulario-cantidad-producto" action="">
+                  <form id="formulario-cantidad-producto" action="#">
                     <div class="form-group row">
                       <label for="cantidad" class="col-xs-3 col-xs-offset-1 col-form-label"><span style="font-size:2em;">Cantidad:</span></label>
 
                       <div class="col-xs-3 col-xs-offset-1 comprando">
-                        <input type="text" class="form-control" id="cantidad-p" value="1">
+                        <input type="text" class="form-control" id="cantidad-p" name="cantidad" value="1">
                       </div>
 
                       <div class="col-xs-4">
@@ -261,8 +296,13 @@
                       <label for="total" class="col-xs-3 col-xs-offset-2 col-form-label"><span style="font-size:2em">Total:</span></label>
                       <div class="col-xs-2 col-xs-offset-1">
                         <p id="total-pagar" style="font-size:2em">$270000</p>
+                        <input id="total-pagar-input" type="hidden" name="valor-pagar" value="">
                       </div>
                     </div>
+
+                    <!-- ID del producto que se envia con el formulario -->
+                    <input type="hidden" name="id" value="243">
+
                     <div class="form-group row">
                       <div class="col-xs-offset-5 col-xs-1">
                         <button type="submit" class="btn btn-primary"><strong>ESCOGER</strong></button>

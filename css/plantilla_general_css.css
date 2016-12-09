@@ -36,6 +36,12 @@ overflow-y: scroll !important;
   .buscador {
     padding-top: 5%;
   }
+
+  .container-listado-productos {
+    padding: 2%;
+    /*height: 400px;*/
+    height: 56vh;
+  }
   /* ************************** FIN BUSQUEDA *********************** */
 }
 
@@ -102,6 +108,8 @@ overflow-y: scroll !important;
   margin-top: 0%;
 }
 .container-fluid-fondo .container-fondo {
+  height: 100%;
+
   margin-right: 10%;
   margin-left: 10%;
   border-radius: 5%;
@@ -141,7 +149,7 @@ overflow-y: scroll !important;
 }
 .container-fondo .container-fluid-pie .container-derechos_reservados {
   padding-bottom: 5%;
-  background-color: #B3AAAA;
+  background-color: #FF5A3D;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
 }
@@ -173,14 +181,13 @@ div .container-productos .container-vitrina {
 
 
 /* ************************* PRODUCTOS ******************************** */
-.container-listado-productos {
-  padding: 2%;
-}
+
 
 .desplazamiento {
+  position: relative;
   padding : 4px;
   width : 100%;
-  height : 350px;
+  height : 100%;
   overflow : auto;
   border: 1px solid red;
 }
@@ -188,7 +195,7 @@ div .container-productos .container-vitrina {
 .container-vitrina {
   width: 100%;
   margin: auto;
-  height: 150px;
+  height: 38%;
   background: url("../imagenes/estante%20productos3.png") no-repeat bottom;
   background-size: 100% 100%;
 }
