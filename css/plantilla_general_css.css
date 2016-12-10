@@ -25,6 +25,7 @@ overflow-y: scroll !important;
 
 
 
+
 /* +++++++++++++++++++++++++ CELULARES +++++++++++++++++++++++++++++++++++*/
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 @media only screen and (min-width: 250px) and (orientation: portrait) {
@@ -36,16 +37,25 @@ overflow-y: scroll !important;
   .buscador {
     padding-top: 5%;
   }
+  /* ************************** FIN BUSQUEDA *********************** */
 
   .container-listado-productos {
     padding: 2%;
     /*height: 400px;*/
     height: 56vh;
   }
-  /* ************************** FIN BUSQUEDA *********************** */
+
+  /* Hacer descripcion producto acorde con dimensiones */
+  .container-descripcion {
+    position: relative;
+    padding: 5%;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
 }
 
 @media only screen and (min-width: 250px) and (orientation: landscape) {
+  /* ************************** BUSQUEDA *********************** */
   #img-carrito {
     width: 80%;
     height: 50%;
@@ -53,11 +63,20 @@ overflow-y: scroll !important;
   .buscador {
     padding-top: 5%;
   }
+  /* ************************** FIN BUSQUEDA *********************** */
 
   .container-listado-productos {
     padding: 2%;
     /*height: 400px;*/
-    height: 70vh;
+    height: 85vh;
+  }
+
+  /* Hacer descripcion producto acorde con dimensiones */
+  .container-descripcion {
+    position: relative;
+    padding: 5%;
+    font-weight: bold;
+    font-size: 1.4em;
   }
 }
 
@@ -102,6 +121,7 @@ overflow-y: scroll !important;
   .buscador {
     padding-top: 3%;
   }
+  /* ************************** FIN BUSQUEDA *********************** */
 
   .container-listado-productos {
     padding: 2%;
@@ -109,7 +129,15 @@ overflow-y: scroll !important;
     width: 85%;
     margin: auto;
   }
-  /* ************************** FIN BUSQUEDA *********************** */
+
+  /* Hacer descripcion producto acorde con dimensiones */
+  .container-descripcion {
+    position: relative;
+    padding: 5%;
+    font-weight: bold;
+    font-size: 1.8em;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -221,6 +249,7 @@ div .container-productos .container-vitrina {
   height: 38%;
   background: url("../imagenes/estante%20productos3.png") no-repeat bottom;
   background-size: 100% 100%;
+  position: relative;
 }
 
   .container-producto {
@@ -245,9 +274,12 @@ div .container-productos .container-vitrina {
       margin-bottom: auto;
     }
 
-  .container-descripcion {
+/*  .container-descripcion {
     position: relative;
-  }
+    padding: 5%;
+    font-weight: bold;
+    font-size: 1.4em;
+  }*/
 
   .container-btn-logo {
     height: 100%;
