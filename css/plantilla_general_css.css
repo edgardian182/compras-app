@@ -50,7 +50,7 @@ overflow-y: scroll !important;
     position: relative;
     padding: 2%;
     font-weight: bold;
-    font-size: 3vw;  /* 1.3em */
+    font-size: 1.3em;  /* 1.3em */
   }
 }
 
@@ -76,7 +76,7 @@ overflow-y: scroll !important;
     position: relative;
     padding: 1%;
     font-weight: bold;
-    font-size: 3vw; /* 1.3em */
+    font-size: 1.3em; /* 1.3em  o 3vw*/
   }
 }
 
@@ -110,6 +110,14 @@ overflow-y: scroll !important;
     padding-top: 3%;
   }
   /* ************************** FIN BUSQUEDA *********************** */
+
+  /* Hacer descripcion producto acorde con dimensiones */
+  .container-descripcion {
+    position: relative;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 1.6em; /* 1.3em  o 3vw*/
+  }
 }
 
 @media only screen and (min-width: 992px) {
