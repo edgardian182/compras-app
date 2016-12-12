@@ -50,7 +50,7 @@ overflow-y: scroll !important;
     position: relative;
     padding: 2%;
     font-weight: bold;
-    font-size: 3vw;  /* 1.3em o 3vw */
+    font-size: 3.5vw;  /* 1.3em o 3vw */
   }
 }
 
@@ -94,6 +94,14 @@ overflow-y: scroll !important;
     padding-top: 7%;
   }
   /* ************************** FIN BUSQUEDA *********************** */
+
+  /* Hacer descripcion producto acorde con dimensiones */
+  .container-descripcion {
+    position: relative;
+    padding: 3%;
+    font-weight: bold;
+    font-size: 3vw; /* 1.3em  o 3vw*/
+  }
 }
 
 
