@@ -6,7 +6,7 @@ html.no-scroll, body.no-scroll {
 }
 
 body {
-  position: relative
+  padding-top: 37px;
 }
 
 
