@@ -5,11 +5,6 @@ html, body {
   overflow: hidden;
 }
 
-body {
-  position: relative
-}
-
-
 /* MODAL SIN SCROLL MOVILES*/
 @media only screen and (max-device-width:768px){
 

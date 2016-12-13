@@ -10,6 +10,8 @@ $(document).ready(function () {
   });
 });
 
+document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+
 
 // Aumentar y Bajar cantidad de producto
 $('.btn-plus').on('click',function(){
