@@ -1,9 +1,9 @@
 /* Evitar Scrolling */
-html, body {
+/*html, body {
   margin: 0;
   height: 100%;
   overflow: hidden;
-}
+}*/
 
 /* MODAL SIN SCROLL MOVILES*/
 @media only screen and (max-device-width:768px){
