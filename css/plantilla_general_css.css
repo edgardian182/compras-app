@@ -1,3 +1,7 @@
+/* Evitar Scrolling */
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+
 /* MODAL SIN SCROLL MOVILES*/
 @media only screen and (max-device-width:768px){
 
@@ -20,6 +24,27 @@ position: absolute;
 body {
 overflow-x: hidden;
 overflow-y: scroll !important;
+}
+/* ****************************************************** */
+
+/* BOTON OPCIONES */
+.btn-opciones {
+  position: relative;
+  float: left;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: white;
+  border-color: #c0392b;
+}
+
+.btn-opciones:hover {
+  background-color: #c0392b;
+  color: white;
 }
 /* ****************************************************** */
 
