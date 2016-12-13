@@ -5,10 +5,10 @@ $("#menu-toggle").click(function(e) {
 
     var wrapper = $('#wrapper');
     if (wrapper.hasClass('toggled')) {
-      document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+      document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
     }
     else {
-      document.body.addEventListener('touchmove', function(e){ });
+      document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
     }
 });
 $("#menu-toggle2").click(function(e) {
