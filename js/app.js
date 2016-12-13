@@ -8,7 +8,7 @@ $("#menu-toggle").click(function(e) {
       document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
     }
     else {
-      document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
+      document.body.addEventListener('touchstart', function(e){ });
     }
 });
 $("#menu-toggle2").click(function(e) {
