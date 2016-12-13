@@ -1,16 +1,21 @@
 // SIDEBAR MENU
-$(document).ready(function () {
-  $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-  });
-  $("#menu-toggle2").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-  });
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+
+    var wrapper = $('#wrapper');
+    if (wrapper.hasClass('toggled')) {
+      document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+    }
+    else {
+      document.body.addEventListener('touchmove', function(e){ });
+    }
+});
+$("#menu-toggle2").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
 });
 
-document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
 
 
 // Aumentar y Bajar cantidad de producto
