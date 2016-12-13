@@ -2,18 +2,12 @@
 $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
-
-    var wrapper = $('#wrapper');
-    if (wrapper.hasClass('toggled')) {
-      document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
-    }
-    else {
-      document.body.addEventListener('touchstart', function(e){ });
-    }
+    $("html, body").toggleClass('no-scroll');
 });
 $("#menu-toggle2").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
+    $("html, body").toggleClass('no-scroll');
 });
 
 
