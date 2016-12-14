@@ -153,7 +153,7 @@ overflow-y: scroll !important;
   .container-listado-productos {
     padding: 2%;
     /*height: 400px;*/
-    height: 95vh; /* 85vh */
+    height: 600px; /* 85vh */
   }
 
   /* Hacer descripcion producto acorde con dimensiones */
@@ -183,7 +183,7 @@ overflow-y: scroll !important;
   #img-canasta {
     position: relative;
     right: -30px;
-    height: 14vh;
+    /*height: 14vh;*/
   }
   /* ************************** FIN PIE *********************** */
 }
