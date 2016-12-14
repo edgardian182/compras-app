@@ -1,144 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- TemplateBeginEditable name="doctitle" -->
   <title>Buy All</title>
-  <!-- TemplateEndEditable -->
   <link rel="Shortcut Icon" href="imagenes/icono_buy_all.png" type="image/x-icon" />
-  <!-- <link href="file:///C|/xampp/htdocs/PAGINAS WEB/buy_all/css/bootstrap.css" rel="stylesheet"> -->
   <link href="css/bootstrap-3.3.4.css" rel="stylesheet" type="text/css">
-  <link href="css/plantilla_general_css.css" rel="stylesheet" type="text/css">
+  <!-- <link href="css/plantilla_general_css.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" href="css/MASTER.css">
   <link rel="stylesheet" href="css/sidebar.css">
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-  <!-- TemplateBeginEditable name="head" -->
-  <!-- TemplateEndEditable -->
-  </head>
-  <body>
+</head>
 
-  <div id="wrapper"> <!-- CONTENEDOR TOTAL PARA SIDEBAR LEFT -->
+<body>
 
-    <!-- Sidebar -->
+  <!-- *************** CONTENEDOR TOTAL PARA SIDEBAR LEFT ******************** -->
+  <div id="wrapper">
+
+    <!-- *********************** SIDEBAR *************************** -->
     <div id="sidebar-wrapper">
       <ul class="sidebar-nav">
         <li class="sidebar-brand">
           <!-- Segundo LINK en app.js con el efecto -->
-          <a href="#menu-toggle2" class="" id="menu-toggle2">Configuración
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <a href="#menu-toggle2" class="" id="menu-toggle2" style="margin-left: -20px">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Configuración
           </a>
         </li>
-        <li class="active"><a href="#">Perfil</a></li>
-        <li><a href="#">Mis compras</a></li>
-        <li><a href="#">Navegacion Guiada</a></li>
-        <li><a href="#">Copyright</a></li>
+        <li class="active"><a href="administracion/usuario/perfil.php">Perfil</a></li>
+        <li><a href="administracion/usuario/misCompras.php">Mis compras</a></li>
+        <li><a href="administracion/usuario/copyright.php">Copyright</a></li>
+        <li><a href="#">Salir</a></li>
       </ul>
     </div>
-    <!-- /#sidebar-wrapper -->
-
-    <div id="page-content-wrapper">  <!-- Contenedor de todo el contenido de la pagina -->
+    <!-- // ************************** FIN SIDEBAR /#sidebar-wrapper ************************ -->
 
 
 
-      <!-- TemplateBeginEditable name="body_inicio_vista" -->
-      <!--inicia contenido total-->
+
+    <!-- ******************** CONTENIDO PAGINA ******************** -->
+    <!-- ********************************************************** -->
+    <div id="page-content-wrapper">
       <div class="container-fluid-fondo">
-      <!--contenido de la app-->
+
+        <!-- ********************* NAVBAR ******************************* -->
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- Con navbar-fixed-top el desplegable cubre todo -->
+            <nav class="nav navbar-default navbar-fixed-top" role="navigation">
+              <div class="container-fluid">
+
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+
+                  <!-- OPCIONES CONFIGURACION -->
+                  <div class="btn-group" style="float:left; margin-left:10px;">
+
+                    <!-- Boton con SIDEBAR IZQUIERDO -->
+                    <a href="#menu-toggle" class="btn btn-opciones dropdown-toggle" id="menu-toggle">
+                    <!-- <button type="button" class="btn btn-opciones dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+                      <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    <!-- </button>  -->
+                    </a>
+                    <!-- <ul class="dropdown-menu">
+                      <li><a href="#">Perfil</a></li>
+                      <li><a href="#">Configuración</a></li>
+                      <li><a href="#">Copyright</a></li>
+                    </ul> -->
+                  </div>
+
+                  <a class="navbar-brand" href="#">Buy All</a>
+                </div>
+
+
+                <!-- LINKS MENU -->
+                <div class="collapse navbar-collapse" id="myNavbar" aria-expanded="false" >
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Compra Express</a></li>
+                    <li><a href="#">Cajero Express</a></li>
+                    <li><a href="#">Vuelta ya</a></li>
+                    <li><a href="#">Empresas y Servicios</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </nav>
+
+          </div>
+        </div>
+        <!-- // ********************* FIN NAVBAR ******************************* -->
+
+
         <div class="container-fondo">
 
-          <!--Aquí inicia el encabezado-->
-          <div class="container-fluid-encabezado">
-            <div class="container-logo-Btn_opciones">
-
-              <div class="container-navegacion">
-                <div class="row">
-
-                  <!-- ********************* NAVBAR ******************************* -->
-
-                  <div class="col-xs-12">
-                    <!-- Con navbar-fixed-top el desplegable cubre todo -->
-                    <nav class="nav navbar-default navbar-fixed-top" role="navigation">
-                      <div class="container-fluid">
-
-                        <div class="navbar-header">
-                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-
-                          <!-- OPCIONES CONFIGURACION -->
-                          <div class="btn-group" style="float:left; margin-left:10px;">
-
-                            <!-- Boton con SIDEBAR IZQUIERDO -->
-                            <a href="#menu-toggle" class="btn btn-opciones dropdown-toggle" id="menu-toggle">
-                            <!-- <button type="button" class="btn btn-opciones dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
-                              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                            <!-- </button>  -->
-                            </a>
-                            <!-- <ul class="dropdown-menu">
-                              <li><a href="#">Perfil</a></li>
-                              <li><a href="#">Configuración</a></li>
-                              <li><a href="#">Copyright</a></li>
-                            </ul> -->
-                          </div>
-
-                          <a class="navbar-brand" href="#">Buy-All</a>
-                        </div>
 
 
-                        <!-- LINKS MENU -->
-                        <div class="collapse navbar-collapse" id="myNavbar" aria-expanded="false" >
-                          <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Compra Express</a></li>
-                            <li><a href="#">Cajero Express</a></li>
-                            <li><a href="#">Vuelta ya</a></li>
-                            <li><a href="#">Empresas y Servicios</a></li>
-                          </ul>
-                          <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                          </ul>
-                        </div>
-
-                      </div>
-                    </nav>
-
-                  </div>
-
-                  <!-- ANTES -->
-                  <!-- <div class="col-xs-9 col-md-10">
-                    <div class="input-group">
-                      <span class="input-group-btn">
-                        <button type="button" class="btn btn-grande" style="background: #FF5A3D; color: white; font-size: 25px">INICIO</button>
-                      </span>
-                      <input type="text" class="form-control input-lg input-grande" placeholder="Buscar...">
-                    </div>
-                  </div>
-                  <div class="col-xs-3 col-md-2">
-                    <!-- Ancho BOTON OPCIONES en media querys +1200px  -->
-                    <!-- <img id="img-opciones-buy" src="imagenes/botones/Btn_opciones_buy_all2.png" width="100%" class="img-responsive" alt="Placeholder image"> -->
-                  <!-- </div> -->
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <!--fin del encabezado-->
-
-          <!--Inicio de cuerpo-->
-          <div class="container-fluid-cuerpo">
-
-            <!--Inicio de busqueda-carrito-->
-            <div class="row container-busqueda-carrito">
-
-              <div class="col-xs-7 col-xs-offset-1 col-md-8 col-md-offset-1">
+            <!-- ************************** BUSQUEDA ********************** -->
+            <div class="row">
+              <div class="col-xs-9 col-md-10">
                 <form action="#">
                   <div class="buscador">
                     <div class="input-group">
@@ -151,68 +116,63 @@
                 </form>
               </div>
 
-              <div class="col-xs-4 col-md-2 text-center">
-                <!-- Tamaño definido en media query -->
-                <img id="img-carrito" src="imagenes/botones/Btn_carro_compras_buy_all3.png" alt="">
+              <div class="col-xs-3 col-md-2 text-center">
+                <img id="img-carrito" src="imagenes/botones/Btn_carro_compras_buy_all3.png" alt="" width="100%">
               </div>
-
             </div>
+            <!-- // ************************** FIN BUSQUEDA ********************** -->
 
-             <!--fin de busqueda-carrito-->
 
+            <!-- ****************************** VITRINA PRODUCTOS ****************************** -->
 
-              <!-- ****************************** PRODUCTOS ******************************** -->
+            <div class="container-listado-productos">
+              <!-- Div Barra de desplazamiento  -->
+              <div class="desplazamiento">
+                <!--Inicio lista de productos-->
 
-              <div class="container-listado-productos">
-                <!-- Div Barra de desplazamiento  -->
-                <div class="desplazamiento">
-                  <!--Inicio lista de productos-->
+                <div class="row container-vitrina">
 
-                  <div class="row container-vitrina">
+                  <div class="col-xs-4 col-md-3 col-md-offset-1 container-producto">
+                    <a id="linkComprar" href="#modalComprar" class="link-producto" data-toggle="modal">
+                      <img class="producto" src="/buy_all/imagenes/productos/logo/zapato1.png" alt="">
+                    </a>
+                  </div>
 
-                    <div class="col-xs-4 col-md-3 col-md-offset-1 container-producto">
-                      <a href="#modalComprar" class="link-producto" data-toggle="modal">
-                        <img class="producto" src="imagenes/productos/logo/zapato1.png" alt="">
-                      </a>
-                    </div>
-
-                    <div class="col-xs-6 col-md-4 container-descripcion text-center" width="100%">
-                      <div class="">
-                        <div class="row">
-                          <div class="col-xs-12" style="word-break: keep-all;">
-                            <p>Adidas World Cup</p>  <!-- NO SUPERAR LOS 34 CARACTERES -->
-                          </div>
-                        </div>
-                        <div class="row">
-                           <div class="col-xs-12">
-                             <p>$270.000</p>
-                           </div>
+                  <div class="col-xs-6 col-md-4 container-descripcion text-center" width="100%">
+                    <div class="">
+                      <div class="row">
+                        <div class="col-xs-12" style="word-break: keep-all;">
+                          <p>Adidas World Cup</p>  <!-- NO SUPERAR LOS 34 CARACTERES -->
                         </div>
                       </div>
-                    </div>
-
-                    <div class="col-xs-2 col-md-3 col-md-offset-0 container-btn-logo text-center">
-                      <div class="row contain-half">
-                        <img class="logoEmpresa" src="imagenes/productos/logo/adidas-logo.png" alt="">
-                      </div>
-                      <div class="row contain-half">
-                        <a href="#modalProducto" class="btn btn-success btn-sm" data-toggle="modal" style="padding:3px 5px;">Detalles</a>
+                      <div class="row">
+                         <div class="col-xs-12">
+                           <p>$270.000</p>
+                         </div>
                       </div>
                     </div>
+                  </div>
 
+                  <div class="col-xs-2 col-md-3 col-md-offset-0 container-btn-logo text-center">
+                    <div class="row contain-half">
+                      <img class="logoEmpresa" src="/buy_all/imagenes/productos/logo/adidas-logo.png" alt="">
+                    </div>
+                    <div class="row contain-half">
+                      <a href="#modalDetalles" class="btn btn-success btn-sm" data-toggle="modal" style="padding:3px 5px;">Detalles</a>
+                    </div>
                   </div>
 
                 </div>
+
               </div>
-
-              <!-- ****************************** FIN PRODUCTOS ******************************** -->
-
             </div>
-            <!-- fin del cuerpo-->
+
+            <!-- // ************************** FIN VITRINA PRODUCTOS *************************** -->
+
 
             <!-- data-keyboard="false" data-backdrop="static" -->
-            <!-- MODAL PARA PRODUCTOS -->
-            <div class="modal fade" id="modalProducto" role="dialog" data-keyboard="false" data-backdrop="static">
+            <!-- **************************** MODAL DETALLES ********************************** -->
+            <div class="modal fade" id="modalDetalles" role="dialog" data-keyboard="false" data-backdrop="static">
               <div class="modal-dialog">
 
                 <div class="modal-content">
@@ -220,8 +180,6 @@
                     <div class="modal-cierre">
                       <a id="modal-cierre" type="button" class="close" data-dismiss="modal" style="font-size:3em; color:red">&times;</a>
                     </div>
-
-
 
                     <div class="row">
                       <div class="col-xs-12 panel">
@@ -297,13 +255,11 @@
 
               </div>
             </div>
-            <!-- FIN MODAL PRODUCTOS -->
+            <!-- // ************************* FIN MODAL DETALLES ****************************** -->
 
 
-
-
-            <!-- MODAL PARA COMPRAR -->
-            <div class="modal fade" id="modalComprar" role="dialog" data-keyboard="false" data-backdrop="static">
+            <!-- **************************** MODAL COMPRAR ********************************** -->
+            <div class="modal fade" id="modalComprar" role="dialog"> <!-- data-keyboard="false" data-backdrop="static" -->
               <div class="modal-dialog">
                 <div class="modal-content">
 
@@ -366,56 +322,48 @@
                 </div>
               </div>
             </div>
-            <!-- FIN MODAL PARA COMPRAR -->
+            <!-- // ************************** FIN MODAL DETALLES ****************************** -->
 
-
-
-            <!-- *****************************  INICIO PIE ********************************-->
-            <div class="container-fluid-pie">
-              <!--Inicio de carrito-mensajes-botones-->
-              <div class=" row container-carrito-mensajes-botones">
-
-                <div class="col-xs-4 col-md-3 col-md-offset-1">
-                  <img class="btn btn-pie-compra" src="imagenes/botones/hacer_pedido_buy_all.png" alt="" width="90%" height="100%">
-                </div>
-
-                <div class="col-xs-4 col-md-3 col-md-offset-1">
-                  <img class="btn btn-pie-compra" src="imagenes/botones/boton-canasta.png" alt="" width="90%" height="100%">
-                </div>
-
-                <div class="col-xs-4 col-md-3 col-md-offset-1">
-                  <img class="btn btn-pie-compra" src="imagenes/botones/mensaje_buy_all.png" alt="" width="90%" height="100%">
-                </div>
-
+            <!-- **************************** INICIO PIE ****************************** -->
+            <div id="contenedor-pie" class="row">
+              <div id="mensajes-provocativos" class="col-xs-8 col-md-8">
+                <marquee scrolldelay="300" behavior="" direction="" bgcolor="">
+                  <h3 style="color: white">Compra ya en tu super tienda</h3>
+                </marquee>
               </div>
-              <!--fin de carrito-mensajes-botones-->
-
-
-
-              <!--Inicio de derechos-->
-              <div class="container-derechos_reservados">
-
+              <div class="col-xs-3 col-md-3">
+                <img id="img-canasta" class="btn-pie-compra img-responsive" src="imagenes/botones/canasta_buy_all_5.png" alt="" width="100%">
               </div>
-              <!--fin de derechos-->
             </div>
-            <!-- *****************************  FIN PIE ********************************-->
+            <!-- // ************************** FIN PIE ****************************** -->
+
+
+
+
 
         </div>
-         <!--fin contenido de la app-->
+
+        <!-- BARRA INFERIOR -->
+        <div class="barra-inferior">
+          <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+          </nav>
+        </div>
+
+
       </div>
-      <!-- fin contenido total-->
+    </div>
+    <!-- ********************************************************** -->
+    <!-- // ******************** FIN CONTENIDO PAGINA ******************** -->
 
 
 
-    </div> <!-- FIN Contenedor de todo el contenido de la pagina -->
 
-  </div> <!-- ENCIERRA TODO PARA SIDEBAR LEFT -->
+  </div>
+  <!-- // *************** FIN CONTENEDOR TOTAL PARA SIDEBAR LEFT ******************** -->
 
-  <script src="js/jquery-1.11.2.min.js"></script>
-  <!-- <script src="file:///C|/xampp/htdocs/PAGINAS WEB/buy_all/js/bootstrap.js"></script> -->
+  <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap-3.3.4.js" type="text/javascript"></script>
-  <!-- TemplateEndEditable -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/app.js"></script>
-  </body>
+
+</body>
 </html>

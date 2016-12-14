@@ -1,0 +1,106 @@
+/* Evitar Scrolling (PONER CLASE CON JS) */
+html.no-scroll, body.no-scroll {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+/* ****************************************************** */
+
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* MODAL SIN SCROLL MOVILES*/
+@media only screen and (max-device-width:768px){
+
+  body.modal-open {
+    /* block scroll for mobile;
+     causes underlying page to jump to top;
+     prevents scrolling on all screens*/
+    overflow: hidden;
+    position: fixed;
+  }
+}
+
+body.viewport-lg {
+/* block scroll for desktop;
+ will not jump to top;
+ will not prevent scroll on mobile*/
+position: absolute;
+}
+
+body {
+overflow-x: hidden;
+overflow-y: scroll !important;
+}
+/* ****************************************************** */
+
+/* BOTON OPCIONES */
+.btn-opciones {
+  position: relative;
+  float: left;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: white;
+  border-color: #c0392b;
+}
+
+.btn-opciones:hover {
+  background-color: #c0392b;
+  color: white;
+}
+/* ****************************************************** */
+
+@charset "utf-8";
+/* Definimos imagen de fondo */
+.container-fluid-fondo {
+  background: url(../imagenes/fondo_app_buy_all.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Contenedor contenido APP*/
+.container-fluid-fondo .container-fondo {
+  height: 86vh; /* TAMAÑO DE TODO EL CONTENEDOR TENIENDO EN CUENTA PADDING */
+
+  margin-right: 2%;
+  margin-left: 2%;
+  border-radius: 20px;
+  padding: 2%;
+  background-color: #FFF;
+}
+
+
+
+@media only screen and (min-width: 250px) and (orientation: portrait) {
+  .container-fluid-fondo .container-fondo {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (min-width: 250px) and (orientation: landscape) {
+  .container-fluid-fondo .container-fondo {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+}
+
+
+@media only screen and (min-width: 550px) {}
+
+@media only screen and (min-width: 769px) {
+  .container-fluid-fondo .container-fondo {
+    margin-right: 12%;
+    margin-left: 12%;
+  }
+}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1200px) {}
